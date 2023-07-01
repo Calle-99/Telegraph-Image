@@ -19,8 +19,8 @@ export async function onRequest(context) {  // Contents of context object
         console.log(response.status); // 200
         if(response.ok){
             // Referer header equal to the admin page
-            console.log(url.origin+"/admin")
-            if (request.headers.get('Referer') == url.origin+"/admin") {
+            console.log(url.origin+"/Dashboard")
+            if (request.headers.get('Referer') == url.origin+"/Dashboard") {
                 //show the image
                 return response;
             }
